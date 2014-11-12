@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\intermediates\pre-dexed\debug\jInstagram-1.3.3-d5948ddaf3ad15ec2f5d6da1fbc2111b349f00a2.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\libs\jInstagram-1.3.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1b91733954f31630af79a99bb0bfb443b30151ae"/>
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\intermediates\pre-dexed\debug\classes-97d50587916037b0f3ca34badc8aca6c346b008f.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\intermediates\pre-dexed\debug\butterknife-5.1.2-a1b8d81fa3557c4fdfc98f7361cbbe5a476cf37a.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\libs\butterknife-5.1.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="daf5472b0df6dabaceb6ad755b3812535863965a"/>
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.2-f6d62c383f87e7116aecab34c0be3f45505cc328.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\libs\universal-image-loader-1.9.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="9e025bc5b84968e7d6ac765e660a70b3e5a87432"/>
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\intermediates\pre-dexed\debug\slf4j-android-1.6.1-RC1-d5db17b26a1ca384771f4851e201f290d9ae57b9.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\libs\slf4j-android-1.6.1-RC1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="a0b527e8aabcc1f1e97d1674dc3f4f0794ec5df1"/>
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\intermediates\pre-dexed\debug\gson-2.3-ae588735c113ee5a75b99bdd2b3fd990fb765e78.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\libs\gson-2.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce"/>
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\intermediates\pre-dexed\debug\actionbarsherlock-4.4.0-a9d8e4a98460812490ee4ffb137c964738aa96aa.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\libs\actionbarsherlock-4.4.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8548852040de69f72e368c4fcd6386263c5fa124"/>
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-f866823c0af3b9a665cdc5eaec074715a9cebd8a.jar"
+        jar="D:\Program Files\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+
+</pre-dex-items>

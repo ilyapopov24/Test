@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/offset_normal">
+    <ImageView
+        android:id="@+id/collage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/select_menu_collage"/>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="@dimen/progress"
+        android:layout_height="@dimen/progress"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:indeterminate="true"/>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\pre-dexed\debug\support-v4-19.1.0-f866823c0af3b9a665cdc5eaec074715a9cebd8a.jar"
+        jar="D:\Program Files\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\pre-dexed\debug\actionbarsherlock-4.4.0-a9d8e4a98460812490ee4ffb137c964738aa96aa.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\libs\actionbarsherlock-4.4.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8548852040de69f72e368c4fcd6386263c5fa124"/>
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\pre-dexed\debug\universal-image-loader-1.9.2-f6d62c383f87e7116aecab34c0be3f45505cc328.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\libs\universal-image-loader-1.9.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="9e025bc5b84968e7d6ac765e660a70b3e5a87432"/>
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\pre-dexed\debug\jInstagram-1.0-jdk-1.7-81dce1c08e14b68039c9aba001f3239294a6b536.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\libs\jInstagram-1.0-jdk-1.7.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="68cc7542c6ffac73a3ce0fe5d69ed7fdb696472e"/>
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\app\build\pre-dexed\debug\classes-d2045bc3fd1aeb4ebb129d19373d0fd3a7a9c2b1.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\RMR\build\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+
+</pre-dex-items>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="instagram_client_id">266a51b9dafb4994b2bf576e1cf834f1</string>
+
+	<string name="instagram_client_secret">78e2f996773c42b4a74e042281da58b7</string>
+
+	<string name="instagram_redirect_uri">https://instagram.com</string>
+nmn
+</resources>
