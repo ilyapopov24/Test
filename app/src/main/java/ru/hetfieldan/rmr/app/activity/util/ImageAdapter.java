@@ -1,4 +1,4 @@
-package ru.hetfieldan.rmr.app.activity.collage;
+package ru.hetfieldan.rmr.app.activity.util;
 
 /**
  * Created by hetfieldan24 on 12.11.2014.

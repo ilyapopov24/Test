@@ -19,6 +19,8 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import java.io.InputStream;
 import java.util.ArrayList;
 
+import ru.hetfieldan.rmr.app.activity.util.MySingleton;
+
 /**
  * Created by hetfieldan24 on 12.11.2014.
  */

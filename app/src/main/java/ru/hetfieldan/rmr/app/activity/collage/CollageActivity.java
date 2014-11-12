@@ -8,9 +8,9 @@ import android.widget.ProgressBar;
 import com.actionbarsherlock.app.SherlockActivity;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 import ru.hetfieldan.rmr.app.R;
+import ru.hetfieldan.rmr.app.activity.util.MySingleton;
 
 /**
  * Created by hetfieldan24 on 15.08.2014.
@@ -21,7 +21,7 @@ public class CollageActivity extends SherlockActivity
     ImageView collage;
     ProgressBar progressBar;
     private ArrayList<String> imageUrls;
-    private ArrayList<String> collageImages;
+    //private ArrayList<String> collageImages;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -34,7 +34,7 @@ public class CollageActivity extends SherlockActivity
         imageUrls = getIntent().getStringArrayListExtra("image_url_list");
         collage = (ImageView)findViewById(R.id.collage);
         int index = 0;
-        collageImages = new ArrayList<String>();
+        /*collageImages = new ArrayList<String>();
         for(int i = 0; i < 25; i++)
         {
             collageImages.add(imageUrls.get(index));
@@ -42,8 +42,8 @@ public class CollageActivity extends SherlockActivity
             if (index >= imageUrls.size())
                 index = 0;
         }
-        //Toast.makeText(CollageActivity.this, Arrays.toString(collageImages.toArray()), Toast.LENGTH_LONG).show();
         Collections.shuffle(collageImages);
+        */
         MySingleton.getInstance().setArray(imageUrls);
         buildCollage();
     }

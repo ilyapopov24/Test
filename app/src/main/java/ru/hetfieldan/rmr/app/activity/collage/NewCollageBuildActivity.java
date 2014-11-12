@@ -19,6 +19,8 @@ import java.io.FileOutputStream;
 import java.util.Random;
 
 import ru.hetfieldan.rmr.app.R;
+import ru.hetfieldan.rmr.app.activity.util.ImageAdapter;
+import ru.hetfieldan.rmr.app.activity.util.MySingleton;
 
 public class NewCollageBuildActivity extends SherlockActivity
 {

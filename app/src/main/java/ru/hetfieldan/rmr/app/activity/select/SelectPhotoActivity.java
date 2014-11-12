@@ -1,11 +1,6 @@
 package ru.hetfieldan.rmr.app.activity.select;
 
-import android.app.ProgressDialog;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,9 +13,6 @@ import android.widget.Toast;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.assist.FailReason;
-import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 
 import org.jinstagram.Instagram;
 import org.jinstagram.entity.users.feed.MediaFeed;
@@ -38,13 +30,10 @@ import ru.hetfieldan.rmr.app.activity.collage.CollageActivity;
  */
 public class SelectPhotoActivity extends SherlockActivity
 {
-    private  final static String IMAGE_LOADED_EVENT = "image_loaded";
-
     private Long userId;
     private Instagram instagram;
     private ArrayAdapter<SelectablePhoto> adapter;
     private int selectedCount;
-    private int loadingCount;
     GridView grid;
 
     @Override
@@ -69,8 +58,6 @@ public class SelectPhotoActivity extends SherlockActivity
 
                 selectedCount += item.isSelected() ? 1 : -1;
                 supportInvalidateOptionsMenu();
-                if(item.isSelected())
-                    ImageLoader.getInstance().loadImage(item.getFull(), new PhotoLoadingListener());
             }
         });
 
@@ -99,10 +86,7 @@ public class SelectPhotoActivity extends SherlockActivity
                 finish();
                 return true;
             case R.id.collage:
-                if(loadingCount == 0)
-                    openCollageActivity();
-                else
-                    openWaitingDialog();
+                openCollageActivity();
                 return true;
             default:
                 return super.onMenuItemSelected(featureId, item);
@@ -150,63 +134,5 @@ public class SelectPhotoActivity extends SherlockActivity
         Intent intent = new Intent(SelectPhotoActivity.this, CollageActivity.class);
         intent.putStringArrayListExtra("image_url_list", urls);
         startActivity(intent);
-    }
-    private void openWaitingDialog()
-    {
-        final ProgressDialog dialog = new ProgressDialog(this);
-        dialog.setTitle(getString(R.string.select_dialog_title));
-        dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-        dialog.setCancelable(false);
-        dialog.setMax(selectedCount);
-        dialog.setProgress(selectedCount - loadingCount);
-        dialog.show();
-
-        registerReceiver(new BroadcastReceiver()
-        {
-            @Override
-            public void onReceive(Context context, Intent intent)
-            {
-                dialog.setProgress(selectedCount - loadingCount);
-                 if(loadingCount == 0)
-                 {
-                     dialog.dismiss();
-                     unregisterReceiver(this);
-                     openCollageActivity();
-                 }
-            }
-        }, new IntentFilter(IMAGE_LOADED_EVENT));
-    }
-    private class PhotoLoadingListener implements ImageLoadingListener
-    {
-        @Override
-        public void onLoadingStarted(String imageUri, View view)
-        {
-            loadingCount++;
-        }
-
-        @Override
-        public void onLoadingFailed(String imageUri, View view, FailReason failReason)
-        {
-            loadingCount--;
-            sendEvent();
-        }
-
-        @Override
-        public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage)
-        {
-            loadingCount--;
-            sendEvent();
-        }
-
-        @Override
-        public void onLoadingCancelled(String imageUri, View view)
-        {
-            loadingCount--;
-            sendEvent();
-        }
-        private void sendEvent()
-        {
-            sendBroadcast(new Intent(IMAGE_LOADED_EVENT));
-        }
     }
 }
